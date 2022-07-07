@@ -1,6 +1,6 @@
  aws-creds-injector 
-## What is aws-creds-injector?
-A programm that retrievs secrets from AWS SecretManager and puts them in Kubernetes as a secret resource or in Hashicorp Vault.
+## What is aws-secret-injector?
+A programm that retrievs secrets from AWS SecretManager and puts them in Kubernetes as a secret resource. Alternatively it can put a secret in Hashicorp Vault instead of secret in Kuvernetes.
 
 ---
 
@@ -8,13 +8,13 @@ A programm that retrievs secrets from AWS SecretManager and puts them in Kuberne
 
 * Via a GO install
   ```shell
-  go get -u github.com/Mr-Mark2112/aws-creds-injector
+  go get -u github.com/Mr-Mark2112/aws-secret-injector
   ```
 ---
 
 ## Building From Source
 
- In order to build aws-creds-injector from source you must:
+ In order to build aws-secret-injector from source you must:
 
  1. Clone the repo
  2. Build and run the executable
