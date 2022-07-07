@@ -1,4 +1,4 @@
- aws-creds-injector 
+ aws-secret-injector 
 ## What is aws-secret-injector?
 A programm that retrievs secrets from AWS SecretManager and puts them in Kubernetes as a secret resource. Alternatively it can put a secret in Hashicorp Vault instead of secret in Kuvernetes.
 
