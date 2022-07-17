@@ -16,7 +16,7 @@ var (
 type Config struct {
 	Region             string `yaml:"region"`
 	AWSSecretName      string `yaml:"aws_secret_name"`
-	K8sCreateSecret    bool   `yaml:"k8s_create_secret"`
+	K8sCreateSecret    bool   `yaml:"kube_create_secret"`
 	KubeSecretName     string `yaml:"kube_secret_name"`
 	AWSSecretVersion   string `yaml:"aws_secret_version"`
 	SecretNamespace    string `yaml:"kube_secret_namespace"`
