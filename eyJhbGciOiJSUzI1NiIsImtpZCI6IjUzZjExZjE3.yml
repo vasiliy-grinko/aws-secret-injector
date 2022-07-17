@@ -1,0 +1,109 @@
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjUzZjExZjE3MzYxZWU5NmRjZjBhOGUxMTVlYzJkZGRmNTdiOTQ4OGMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjIl0sImV4cCI6MTY4ODU3NDU0NiwiaWF0IjoxNjU3MDM4NTQ2LCJpc3MiOiJodHRwczovL29pZGMuZWtzLmV1LW5vcnRoLTEuYW1hem9uYXdzLmNvbS9pZC9BNUY0ODYyRDVEQjVGQTMzQ0U3RUJERjdCNzMzNURCRiIsImt1YmVybmV0ZXMuaW8iOnsibmFtZXNwYWNlIjoiZGVmYXVsdCIsInBvZCI6eyJuYW1lIjoiZ28tc2VydmVyLTU5NWM5YmZiNDYtaGJtanciLCJ1aWQiOiI5NDRhZGI5MS1hODQ2LTRmY2EtYWUzYi1jOTM5MTdmZTE2N2EifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6ImdvLXNlcnZlciIsInVpZCI6ImIwMWE0ZTI2LThlZDAtNDA0Yy1hNWVkLTY0ZTc2MDZjODYxYSJ9LCJ3YXJuYWZ0ZXIiOjE2NTcwNDIxNTN9LCJuYmYiOjE2NTcwMzg1NDYsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmdvLXNlcnZlciJ9.d1-6i0MTTrr6IMAdjkTYveSevDmuJJV2Vt_I1Z9mV-qS6_rVg11ylznp6791h-rtuWl1-DUj_F_ZZ9IAmzr8WByMbwwzJI1hVUIJQaXQbB56zmHbYYzKJAqnf2sqIyRCzwQhNtZ2nKdfqmAIU9ktw1FP-8PaJZSYhoHCWnixeOyl9SG2gEyW3XiqHENr6wjdaUgsaRJ9w9vw3Wn0PpuGYYM03jZw2cUIWtSdCx_PasTSd1xUG7SuyOxfDHh2IafcmovNBq09lYYbE-lDwKmc9Nuuw0Ap-lwZgyGowDCa_h_yDzMu1LA0Qiya33Cnkm18F0w1ObuJ80go6DDDBwmV5A/
+
+LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EY3dOREUzTWpJd01Gb1hEVE15TURjd01URTNNakl3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTC9KCm1mVk8xRWlZazV1SGZjZmpUaDJwVWZZaFVQUmU2SitLbEFDTzZNN1lvMWp1UG4rUnZKZFhaQ0QraHdCZ01mRlYKb0VJYWlwUnVDNVpGTTVTRUE5QVB5Z2hieE9CMElpYUV3V1pkZ3drRmlxcUc5bTN0aEJVVFVyMWpBTThQYTNBRApKTlZ4MXJVbjZHNjZrZXZDODhCdlZRY0pvMldlaTVleGIzRjhxWUVIZkpHdnQvUi9rRE53ckpuL3h2KzNJUUtVClVsZ2VEMXdIdWZVSFZ5TFA1b2IzQ0hVaFRyRXJsbElTcFFGZVExNVAzUEtJd0M4NW5Sa0xuUGQ0aFlCTmt5dEUKUHR1Z2JIdGxadVh5STZHUWZUVng1NTlxZHZmekpRVG9DZkpCM25NR2JtNXhjTDhibHc3RWNIVzlGdEJaZFk4SwptakorRkwyZVI4eGdwSnh0ZVA4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOa2tsSXlkbEg5dGxxZDFIckU3ckZZaHBNNEJNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDZFc3WjA2MS92QWd4Rnp1RUk2dDNMQ0lHbm15dmpLL3pKcjIrOEx5c0tkZzJDUDc4OQpoMVQ4SXVIVUgrUldTZGwwVjFoclRETVU3b3dtY1FlS3MvYkQ0ZjBnWWlMTTFVamZZOEI2WlJnRHlZSGZSbjZQCnlvYkxmMHZNVEl5MTFsVHlTQWkxblVKdW5uTXpSUVlPbHFFS3VXSVdBRnV5UnMwTE5RK1hRQjBZQm05TEV4S20KSWtPMCtqTmdma0V6VkJ2YkF3bU9oeTdmUkg0eUVTclBtQ25OYVBFRzNkcjYzMFd5QVZaT0ZETEtaeTZsK1JVOQorY3dMdXR3b3lLU0ZKbUkrY2VKNSt1d3ZncUpCOXUybDNVclp5RGhYV2k4UThGL1lqemZzVG82RUVDT215NVRICm9acjF3K2NVcVJUUHFYVm0zRmRDZ3FLUTFCN3F6b09VeUg1VwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+
+
+cat <<EOF | kubectl apply -f -
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: kubernetes.default.svc
+spec:
+  request: $(cat server.csr | base64 | tr -d '\n')
+  signerName: kubernetes.default.svc/sign
+  usages:
+  - digital signature
+  - key encipherment
+  - server auth
+EOF
+
+cat <<EOF | cfssl genkey - | cfssljson -bare server
+{
+  "hosts": [
+    "kubernetes.default.svc.cluster.local",
+    "kubernetes.default.svc",
+    "A5F4862D5DB5FA33CE7EBDF7B7335DBF.yl4.eu-north-1.eks.amazonaws.com"
+  ],
+  "CN": "vault-0.vault.vault.cluster.local",
+  "key": {
+    "algo": "ecdsa",
+    "size": 256
+  }
+}
+EOF
+
+cat <<EOF | cfssl gencert -initca - | cfssljson -bare ca
+{
+  "CN": "My EKS Signer",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  }
+}
+EOF
+
+kubectl get csr kubernetes.default.svc -o jsonpath='{.spec.request}' | \
+  base64 --decode | \
+  cfssl sign -ca ca.pem -ca-key ca-key.pem -config server-sign-conf.json - | \
+  cfssljson -bare ca-signed-server
+
+kubectl get csr kubernetes.default.svc -o json | \
+  jq '.status.certificate = "'$(base64 ca-signed-server.pem | tr -d '\n')'"' | \
+  kubectl replace --raw /apis/certificates.k8s.io/v1/certificatesigningrequests/kubernetes.default.svc/status -f -
+
+  kubectl get csr kubernetes.default.svc -o jsonpath='{.status.certificate}' \
+  | base64 --decode > server.crt
+
+  kubectl create secret generic swisscom-secret-1 --from-literal=username=vasiliy --from-literal=password=Y4nys7f11
+
+apiVersion: v1
+data:
+  password: WTRueXM3ZjEx
+  username: dmFzaWxpeQ==
+kind: Secret
+metadata:
+  creationTimestamp: "2022-07-06T15:48:45Z"
+  name: swisscom-secret-1
+  namespace: default
+  resourceVersion: "700426"
+  uid: 164b8129-0c63-48b2-a52c-e92c0949b258
+type: Opaque
+
+  export SA_SECRET_NAME=$(kubectl -n vault get secrets --output=json \
+    | jq -r '.items[].metadata | select(.name|startswith("vault-auth-")).name')
+
+
+    export SA_JWT_TOKEN=$(kubectl -n vault get secret $SA_SECRET_NAME \
+      --output 'go-template={{ .data.token }}' | base64 --decode)    
+
+      vault write -tls-skip-verify -address="http://13.51.255.43:30007" \
+      auth/kubernetes/config \
+     token_reviewer_jwt="$SA_JWT_TOKEN" \
+     kubernetes_host="$K8S_HOST" \
+     kubernetes_ca_cert="$SA_CA_CRT" \
+     issuer="https://kubernetes.default.svc.cluster.local"
+
+     curl --request POST \
+       --data '{"jwt": "'"$KUBE_TOKEN"'", "role": "go-server"}' \
+       http://13.51.255.43:30007/v1/auth/kubernetes/login
+
+
+       vault write -tls-skip-verify -address="http://13.51.255.43:30007" auth/kubernetes/role/go-server \
+  bound_service_account_names=go-server \
+  bound_service_account_namespaces=default \
+  policies=db-policy \
+  ttl=999h
+
+  vault.hashicorp.com/agent-inject: "true"
+        vault.hashicorp.com/agent-inject-status: 'update'                  
+        vault.hashicorp.com/agent-inject-secret-env: secrets/maria-db-creds                      
+        vault.hashicorp.com/agent-inject-template-env: |                                         
+          {{- with secret "secrets/maria-db-creds" -}}                            
+          {{ range $k, $v := .Data -}}                                  
+          export {{ $k }}='{{ $v }}'        
+          {{- end -}}                      
+        vault.hashicorp.com/role: go-server
+        vault.hashicorp.com/log-level: debug
+
+        data: map[dbname:test-db-swisscom engine:mariadb host:185.24.53.157 password:db-test-pass2012 port:3306 username:vasiliy]
+metadata: map[created_time:2022-07-04T20:25:12.827261146Z custom_metadata:<nil> deletion_time: destroyed:false version:1]
