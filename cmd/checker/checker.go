@@ -149,7 +149,7 @@ func CheckSecretAWSversion(cfg *config.Config, currentVerId *string, secretData 
 					log.Println("Secret's version has changed, applying new version to Kubernetes...")
 					secrets.ApplySecretK8s(newSecForK8S, cfg.SecretNamespace, cfg.KubeSecretName, kubeconfig)
 				}
-				log.Println(cfg.VaultCrearteSecret)
+
 				if cfg.VaultCrearteSecret {
 					log.Println("Secret's version has changed, applying new version to Vault...")
 					newSecForVault := make(map[string]interface{})
@@ -160,10 +160,11 @@ func CheckSecretAWSversion(cfg *config.Config, currentVerId *string, secretData 
 					secrets.ApplySecretVault(newSecForVault, cfg)
 				}
 			}
+			*currentVerId = verId
 			actualCurrentVerId = verId
-
+			log.Printf(`Version ID of "AWSCURRENT": %s`, actualCurrentVerId)
 		}
-		log.Printf(`Version ID of "AWSCURRENT": %s`, actualCurrentVerId)
+
 	}
 }
 
