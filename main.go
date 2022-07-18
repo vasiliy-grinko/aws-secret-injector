@@ -18,12 +18,10 @@ import (
 
 var (
 	errNotModified = errors.New("not modified")
-	// cfg            *Config
 )
 
 var config_path = flag.String("c", "config/config.yaml", "Path to a config.yaml file")
 
-// var cfg = Config{}
 var cfg *Config
 var kubeconfig *string
 

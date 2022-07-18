@@ -37,9 +37,6 @@ func readConfig(ConfigName string) (x *Config, err error) {
 	if err = yaml.Unmarshal(file, x); err != nil {
 		return nil, err
 	}
-	// if x.LogLevel == "" {
-	// 	x.LogLevel = "Debug"
-	// }
 	return x, nil
 }
 

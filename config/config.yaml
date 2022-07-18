@@ -2,11 +2,11 @@ region: "eu-north-1"
 aws_secret_name: "maria-db-creds"
 aws_secret_version: "AWSCURRENT"
 vault_create_secret: true # whether create a secret in Vault or not
-vault_host: "http://192.168.131.128:30007"
-vault_token: "hvs.sRxShOqrZ3MwreOE09zAkd8z"
+vault_host: "http://127.0.0.1:8200"
+vault_token: ""
 vault_mount_path: "db_secrets" # initial path of yours KV engine in vault
-vault_dir_name: "creds" # name of directory with key-value secrets to create in Vault
+vault_dir_name: "test-secret" # name of directory with key-value secrets to create in Vault
 kube_create_secret: true # whether create a secret in Kubernetes or not
 kube_secret_namespace: "default" # 
 kube_secret_name: "swisscom-secret-test"
-inerval_rescan_for_renew: 40
+inerval_rescan_for_renew: 60

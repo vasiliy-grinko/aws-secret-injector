@@ -6,9 +6,9 @@ require (
 	github.com/aws/aws-sdk-go v1.44.48
 	github.com/hashicorp/vault/api v1.7.2
 	gopkg.in/yaml.v2 v2.4.0
-	k8s.io/api v0.24.2
-	k8s.io/apimachinery v0.24.2
-	k8s.io/client-go v0.24.2
+	k8s.io/api v0.24.3
+	k8s.io/apimachinery v0.24.3
+	k8s.io/client-go v0.24.3
 )
 
 require (

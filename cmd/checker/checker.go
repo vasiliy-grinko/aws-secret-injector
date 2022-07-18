@@ -1,4 +1,3 @@
-//5BD16627-D074-45CE-876B-A09AB85CE13B
 package checker
 
 import (
@@ -12,7 +11,6 @@ import (
 	"os/signal"
 	"swisscom/config"
 	. "swisscom/config"
-	"swisscom/pkg/logging"
 	"swisscom/pkg/secrets"
 	"time"
 
@@ -22,11 +20,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/secretsmanager"
 )
 
-var (
-	errNotModified = errors.New("not modified")
-	processingchan = make(chan processingItem, 1000)
-	copyError      = make(chan error, 0)
-)
+var errNotModified = errors.New("not modified")
 
 type processingItem struct {
 	AWSsecretVersion string
@@ -62,12 +56,11 @@ func ScanLoop(ctx context.Context, cfg *config.Config, currentVerId *string, sec
 		cfgTmp, err := config.ReloadConfig(configFileName)
 		if err != nil {
 			if err != errNotModified {
-				logging.Debug.Println("readconfig:", err)
+				log.Println("readconfig:", err)
 			}
 		} else {
 			log.Println("rescanning config file")
 			cfg = cfgTmp
-			logging.InitLogger(cfg)
 		}
 	}
 }
@@ -76,12 +69,9 @@ func ScanLoop(ctx context.Context, cfg *config.Config, currentVerId *string, sec
 func CheckSecretAWSversion(cfg *config.Config, currentVerId *string, secretData map[string]string, kubeconfig *string) {
 
 	sess, err := session.NewSession()
-	// &aws.Config{
-	// Region:      aws.String(region),
-	// Credentials: credentials.NewStaticCredentials("AKID", "SECRET_KEY", "TOKEN"),}
 	if err != nil {
 		// Handle session creation error
-		logging.Errorln(err)
+		log.Fatalln(err)
 	}
 	svc := secretsmanager.New(sess,
 		aws.NewConfig().WithRegion(cfg.Region))
@@ -123,7 +113,7 @@ func CheckSecretAWSversion(cfg *config.Config, currentVerId *string, secretData 
 				fmt.Println(secretsmanager.ErrCodeResourceNotFoundException, aerr.Error())
 			}
 		} else {
-			logging.Errorln(err)
+			log.Fatalln(err)
 		}
 	}
 	// get actual secret data from AWS
@@ -175,13 +165,10 @@ func CheckSecretAWSversion(cfg *config.Config, currentVerId *string, secretData 
 		}
 		log.Printf(`Version ID of "AWSCURRENT": %s`, actualCurrentVerId)
 	}
-
-	// return secretVersion, err
 }
 
+// Retrievs a secret from AWS SecretsManager
 func GetSecretAWS(cfg Config) (string, *string, error) {
-	// region string, secretName string, secretVersion string
-	//Create a Secrets Manager client
 	sess, err := session.NewSession()
 	// &aws.Config{
 	// Region:      aws.String(region),
@@ -189,7 +176,7 @@ func GetSecretAWS(cfg Config) (string, *string, error) {
 
 	if err != nil {
 		// Handle session creation error
-		logging.Errorln(err)
+		log.Fatalln(err)
 	}
 	svc := secretsmanager.New(sess,
 		aws.NewConfig().WithRegion(cfg.Region))
@@ -224,7 +211,7 @@ func GetSecretAWS(cfg Config) (string, *string, error) {
 				fmt.Println(secretsmanager.ErrCodeResourceNotFoundException, aerr.Error())
 			}
 		} else {
-			logging.Errorln(err)
+			log.Fatalln(err)
 		}
 	}
 

@@ -6,7 +6,6 @@ import (
 	"log"
 	"strings"
 	"swisscom/config"
-	"swisscom/pkg/logging"
 
 	vault "github.com/hashicorp/vault/api"
 	apiv1 "k8s.io/api/core/v1"
@@ -45,7 +44,7 @@ func ApplySecretVault(secret map[string]interface{}, cfg *config.Config) {
 
 	client, err := vault.NewClient(config)
 	if err != nil {
-		logging.Errorln("unable to initialize Vault client: %v", err)
+		log.Fatalf("unable to initialize Vault client: %v", err)
 	}
 	// Authenticate
 	client.SetToken(cfg.VaultToken)
@@ -53,7 +52,7 @@ func ApplySecretVault(secret map[string]interface{}, cfg *config.Config) {
 
 	_, err = client.KVv2(cfg.VaultMountPath).Patch(context.Background(), cfg.VaultDirName, secret)
 	if err != nil {
-		logging.Errorln("unable to patch secret: %v", err)
+		log.Fatalf("unable to patch secret: %v", err)
 	}
 	log.Println("Secret successfully patched in Vault.")
 }
@@ -97,11 +96,11 @@ func CreateSecretK8s(secretData map[string]string, namespaceForSecret string, se
 func ApplySecretK8s(secretData map[string]string, namespaceForSecret string, secretName string, kubeconfig *string) {
 	config, err := clientcmd.BuildConfigFromFlags("", *kubeconfig)
 	if err != nil {
-		logging.Errorln(err)
+		log.Fatalln(err)
 	}
 	clientset, err := kubernetes.NewForConfig(config)
 	if err != nil {
-		logging.Errorln(err)
+		log.Fatalln(err)
 	}
 
 	secretClient := clientset.CoreV1().Secrets(namespaceForSecret)

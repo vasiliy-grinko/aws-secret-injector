@@ -11,15 +11,11 @@ IMAGE      := ${IMG_NAME}:${VERSION}
 
 default: help
 
-# test:   ## Run all tests
-# 	@go clean --testcache && go test ./...
-
-# cover:  ## Run test coverage suite
-# 	@go test ./... --coverprofile=cov.out
-# 	@go tool cover --html=cov.out
+test:   ## Run tests
+	@go clean --testcache && go test ./pkg/secrets/
 
 build:  ## Builds the CLI
 	@go build ${GO_FLAGS} \
-	-ldflags "-w -s -w -X ${PACKAGE}/cmd.version=${VERSION} -X ${PACKAGE}/cmd.commit=${GIT_REV} -X ${PACKAGE}/cmd.date=${DATE}" \
+	-ldflags "-w -s -X ${PACKAGE}/cmd.version=${VERSION} -X ${PACKAGE}/cmd.commit=${GIT_REV} -X ${PACKAGE}/cmd.date=${DATE}" \
 	-a -tags netgo -o ${OUTPUT_BIN} main.go
 
